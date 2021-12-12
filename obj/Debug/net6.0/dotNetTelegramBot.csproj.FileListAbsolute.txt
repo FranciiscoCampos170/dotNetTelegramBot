@@ -16,3 +16,5 @@ C:\Users\franc\OneDrive\Documentos\code\dotNetTelegramBot\obj\Debug\net6.0\dotNe
 C:\Users\franc\OneDrive\Documentos\code\dotNetTelegramBot\obj\Debug\net6.0\ref\dotNetTelegramBot.dll
 C:\Users\franc\OneDrive\Documentos\code\dotNetTelegramBot\obj\Debug\net6.0\dotNetTelegramBot.pdb
 C:\Users\franc\OneDrive\Documentos\code\dotNetTelegramBot\obj\Debug\net6.0\dotNetTelegramBot.genruntimeconfig.cache
+C:\Users\franc\OneDrive\Documentos\code\dotNetTelegramBot\bin\Debug\net6.0\JetBrains.Annotations.dll
+C:\Users\franc\OneDrive\Documentos\code\dotNetTelegramBot\bin\Debug\net6.0\Telegram.Bot.Extensions.Polling.dll

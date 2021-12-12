@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "cIBBm2sFx4uzXjjz8qVZ0EOrr4Y4YAluN4BvvZsSpv3fuvj9OOg0HGe95WCB4lzwb78bvZw97vhMZKwDiewAqA==",
+  "dgSpecHash": "dizVUhRQ388yaRPfBUbw2SbsC0Tkc7sc8WQDdLCnWnUVRGCeEoNrJoE8R9Ex6Qyo8eVaHSg8qdLtX5aBqKElgA==",
   "success": true,
   "projectFilePath": "C:\\Users\\franc\\OneDrive\\Documentos\\code\\dotNetTelegramBot\\dotNetTelegramBot.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\franc\\.nuget\\packages\\jetbrains.annotations\\2021.3.0\\jetbrains.annotations.2021.3.0.nupkg.sha512",
     "C:\\Users\\franc\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
-    "C:\\Users\\franc\\.nuget\\packages\\telegram.bot\\17.0.0\\telegram.bot.17.0.0.nupkg.sha512"
+    "C:\\Users\\franc\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
+    "C:\\Users\\franc\\.nuget\\packages\\telegram.bot\\17.0.0\\telegram.bot.17.0.0.nupkg.sha512",
+    "C:\\Users\\franc\\.nuget\\packages\\telegram.bot.extensions.polling\\1.0.0\\telegram.bot.extensions.polling.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }
