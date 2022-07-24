@@ -1,8 +1,9 @@
-﻿using Telegram.Bot;
+using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Extensions.Polling;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
+using Telegram.Bot.Types.ReplyMarkups;
 
 var botClient = new TelegramBotClient("5068974834:AAHWdjg7uth1MU0c5JYsxBQmErpAvJnOR4U");
 
@@ -38,16 +39,48 @@ async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, Cancel
 
     var chatId = update.Message.Chat.Id;
     var messageText = update.Message.Text;
+    var from = update.Message.From;
+    int opt = 0;
+    string resposta = string.Empty;
 
-    Console.WriteLine($"Received a '{messageText}' message in chat {chatId}.");
+    switch (messageText)
+    {
+        case "1":
+            resposta = "Boa Pergunta";
+            break;
+        default:
+            resposta = "Opção errada amigo";
+            break;
+    }
+    
+    
+
+Console.WriteLine($"Received a '{messageText}' message in chat {chatId}, from {from}");
+    //Console.WriteLine("")
 
     // Echo received message text
     Message sentMessage = await botClient.SendTextMessageAsync(
         chatId: chatId,
-        text: "You said:\n" + messageText,
-        
+        text: resposta,
+        parseMode: ParseMode.MarkdownV2,
+        replyToMessageId: update.Message.MessageId,
+
         cancellationToken: cancellationToken);
+
+    Message message = await botClient.SendPhotoAsync(
+            chatId: chatId,
+            photo: "https://github.com/TelegramBots/book/raw/master/src/docs/photo-ara.jpg",
+            caption: "<b>Ara bird</b>. <i>Source</i>: <a href=\"https://pixabay.com\">Pixabay</a>",
+            parseMode: ParseMode.Html,
+            cancellationToken: cancellationToken);
+
+    Message message1 = await botClient.SendStickerAsync(
+            chatId: chatId,
+            sticker: "https://github.com/TelegramBots/book/raw/master/src/docs/sticker-fred.webp",
+            cancellationToken: cancellationToken);
 }
+
+
 
 Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
 {
